@@ -1,0 +1,337 @@
+.navbarWhite,
+.navbarBlack {
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  z-index: 3;
+  left: 0;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 300;
+  box-sizing: border-box;
+  align-items: center;
+  font-weight: 500;
+
+    .logo {
+        display: flex;
+        text-decoration: none;
+        font-size: 1.2em;
+        margin-top: 35px;
+        padding: 0 35px;
+        cursor: pointer;
+
+        p {
+        margin: 0;
+        transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+        }
+
+        .name {
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-left: 5px;
+            transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+
+            p {
+                position: relative;
+                transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+
+                &:nth-of-type(2) {
+                padding-left: 0.3em;
+                }
+
+                &:nth-of-type(3) {
+                position: absolute;
+                left: 120px;
+                padding-left: 0.8em;
+                }
+            }
+        }
+
+        &:hover {
+            .name {
+                padding-right: 5px;
+
+                .codeBy {
+                    transform: translateX(-100%);
+                }
+
+                .dennis {
+                    transform: translateX(-60px);
+                }
+
+                .snellenberg {
+                    transform: translateX(-65px);
+                }
+            }
+        }
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        margin-top: 35px;
+        padding: 0 35px;
+
+        .el {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 3;
+            padding: 15px 10px;
+            cursor: pointer;
+
+            .Link {
+                text-decoration: none;
+                font-size: 1.2em;
+                z-index: 4;
+            }
+
+            .indicator {
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                top: 45px;
+                left: 50%;
+                border-radius: 50%;
+            }
+        }
+
+        .elMenu {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 3;
+            padding: 15px 10px;
+            margin-top: 15px;
+            cursor: pointer;
+
+            .LinkMenu {
+                text-decoration: none;
+                font-size: 1.2em;
+                z-index: 4;
+            }
+
+            .indicatorMenu {
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                margin-right: 5px;
+            }
+        }
+
+
+        a {
+            cursor: pointer;
+        }
+    }
+
+  &.navbarWhite {
+    color: white;
+
+    .logo {
+      color: white;
+    }
+
+    .nav .el .Link {
+      color: white;
+    }
+    
+    .nav .elMenu .LinkMenu {
+      color: white;
+    }
+
+    .nav .indicator {
+      background-color: white;
+    }
+
+    .nav .indicatorMenu {
+      background-color: white;
+    }
+  }
+
+  &.navbarBlack {
+    color: fb6b28;
+
+    .logo {
+      color: #fb6b28;
+    }
+
+    .nav .el .Link {
+      color: #fb6b28;
+    }
+
+    .nav .elMenu .LinkMenu {
+      color: #fb6b28;
+    }
+
+    .nav .indicator {
+      background-color: #fb6b28;
+    }
+
+    .nav .indicatorMenu {
+      background-color: #fb6b28;
+    }
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .navbarWhite,
+  .navbarBlack {
+    .logo {
+      font-size: 1em;
+      margin-top: 25px;
+
+      .name p:nth-of-type(3) {
+        left: 100px;
+      }
+
+      &:hover {
+        .name {
+          .dennis {
+            transform: translateX(-50px);
+          }
+
+          .snellenberg {
+            transform: translateX(-55px);
+          }
+        }
+      }
+    }
+
+    .nav {
+      margin-top: 25px;
+
+      .el .Link {
+        font-size: 1em;
+        padding: 0.2em 0;
+      }
+
+      .el .indicator {
+        top: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1050px) and (min-height: 1000px) {
+  .navbarWhite,
+  .navbarBlack {
+    .logo {
+      font-size: 1.2em;
+      margin-top: 35px;
+
+      .name p:nth-of-type(3) {
+        left: 120px;
+      }
+
+      &:hover {
+        .name {
+          .dennis {
+            transform: translateX(-60px);
+          }
+
+          .snellenberg {
+            transform: translateX(-65px);
+          }
+        }
+      }
+    }
+
+    .nav {
+      margin-top: 35px;
+
+      .el .Link {
+        font-size: 1.2em;
+      }
+
+      .el .indicator {
+        top: 45px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) and (max-height: 950px),
+only screen and (max-width: 380px) and (max-height: 700px) {
+  .navbarWhite,
+  .navbarBlack {
+    .logo {
+      font-size: 1.2em;
+      margin-top: 35px;
+      .name {
+
+        p {
+
+            &:nth-of-type(3) {
+                left: 120px;
+                padding-left: 0.8em;
+            }
+        }
+    }
+
+      &:hover {
+        .name {
+          .dennis {
+            transform: translateX(-60px);
+          }
+
+          .snellenberg {
+            transform: translateX(-65px);
+          }
+        }
+      }
+    }
+
+    .nav {
+      .el{
+        display: none;
+      }
+      .elMenu{
+        display: flex;
+        font-size: 1.1em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) and (max-height: 500px) {
+  .navbarWhite,
+  .navbarBlack {
+    .logo {
+      font-size: 1em;
+      margin-top: 25px;
+
+      .name p:nth-of-type(3) {
+        left: 100px;
+      }
+
+      &:hover {
+        .name {
+          .dennis {
+            transform: translateX(-50px);
+          }
+
+          .snellenberg {
+            transform: translateX(-55px);
+          }
+        }
+      }
+    }
+
+    .nav {
+      margin-top: 25px;
+
+      .el .Link {
+        font-size: 1em;
+        padding: 0.2em 0;
+      }
+
+      .el .indicator {
+        top: 40px;
+      }
+    }
+  }
+}

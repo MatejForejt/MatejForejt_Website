@@ -1,0 +1,324 @@
+.mainSlider {
+    width: 100vw;
+    overflow: hidden;
+    .body{
+        position: relative;
+        justify-content: center;
+        display: flex;
+        padding: 2vw;
+        height: 225vh;
+        width: 160vw;
+        background-color: #ae8b79;
+        .slider{ 
+            transform: rotate(15deg);
+            width: 100%;
+            position: relative;
+            display: flex;
+            gap: 1vw;
+            box-sizing: border-box;
+            left: -25%;
+
+            .column {
+                position: relative;
+                width: 45vw;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 1vw;
+                .imageContainer{ 
+                    width: 35vw;
+                    height: calc(100vh * 0.825);
+                    overflow: hidden;
+                    position: relative; //this needs to be there, otherwise the Image will try 
+                    border-radius: 10px;
+                    img{
+                        object-fit: cover;
+                        z-index: 1;
+                    }
+
+                    video{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 10px;
+                        position: absolute;
+                        z-index: 2;
+                        cursor: none;
+                        pointer-events: none;
+                    }
+                    
+                }
+
+                &:nth-of-type(1) {
+                    top: -55%;
+                }
+                &:nth-of-type(2) {
+                    top: -35%;
+                }
+                &:nth-of-type(3) {
+                    top: -70%;
+                }
+                &:nth-of-type(4) {
+                    top: -50%;
+                }
+                &:nth-of-type(5) {
+                    top: -155%;
+                }
+
+            }
+        }  
+    }
+    
+}
+
+@media only screen and (max-width: 1750px){
+    .mainSlider{
+        .body{
+            width: 160vw;
+            height: 205vh;
+            .slider{
+                .column{
+                    min-height: 80px;
+                    width: 35%;
+                    .imageContainer{
+                        width: 45vw;
+                        height: calc(60vw * 0.825);
+                        min-height: 480px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1350px){
+    .mainSlider{
+        .body{
+            width: 180vw;
+            .slider{
+                .column{
+                    min-height: 80px;
+                    width: 35%;
+                    .imageContainer{
+                        min-height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1050px) and (min-height: 1000px) {
+    .mainSlider{
+        .body{
+            height: 150vh;
+            width: 300vw;
+            .slider{
+                width: 100%;
+                .column {
+                    position: relative;
+                    width: 50vw;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5vw;
+                    .imageContainer{ 
+                        width: 50vw;
+                        height: calc(50vw * 0.825);
+                        overflow: hidden;
+                        position: relative; //this needs to be there, otherwise the Image will try 
+                        border-radius: 10px;
+                        img{
+                            object-fit: cover;
+                        }
+    
+                        video{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            position: absolute;
+                        }
+                        
+                    }
+    
+                    &:nth-of-type(1) {
+                        top: -55%;
+                    }
+                    &:nth-of-type(2) {
+                        top: -45%;
+                    }
+                    &:nth-of-type(3) {
+                        top: -90%;
+                    }
+                    &:nth-of-type(4) {
+                        top: -70%;
+                    }
+                    &:nth-of-type(5) {
+                        top: -175%;
+                    }
+    
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 900px) and (min-height: 800px) {
+    .mainSlider{
+        .body{
+            height: 150vh;
+            width: 300vw;
+            .slider{
+                width: 100%;
+                .column {
+                    position: relative;
+                    width: 65vw;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5vw;
+                    .imageContainer{ 
+                        width: 65vw;
+                        height: calc(65vw * 0.725);
+                        overflow: hidden;
+                        position: relative; //this needs to be there, otherwise the Image will try 
+                        border-radius: 10px;
+                        img{
+                            object-fit: cover;
+                        }
+    
+                        video{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            position: absolute;
+                        }
+                        
+                    }
+    
+                    &:nth-of-type(1) {
+                        top: -55%;
+                    }
+                    &:nth-of-type(2) {
+                        top: -45%;
+                    }
+                    &:nth-of-type(3) {
+                        top: -90%;
+                    }
+                    &:nth-of-type(4) {
+                        top: -70%;
+                    }
+                    &:nth-of-type(5) {
+                        top: -175%;
+                    }
+    
+                }
+            }
+        }
+    }
+}
+
+// mobiles Viewport
+
+@media only screen and (max-width: 450px) and (max-height: 950px){
+    .mainSlider {
+        width: 100vw;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        .body{
+            padding: 2vw;
+            height: 175vh;
+            width: 300vw;
+            .slider{ 
+    
+                .column {
+                    width: 55vh;
+                    .imageContainer{ 
+                        width: 50vh;
+                        height: calc(50vh * 0.825);
+                        border-radius: 10px;
+                        img{
+                            object-fit: cover;
+                        }
+                        
+                    }
+    
+                    &:nth-of-type(1) {
+                        top: -55%;
+                    }
+                    &:nth-of-type(2) {
+                        top: -60%;
+                    }
+                    &:nth-of-type(3) {
+                        top: -100%;
+                    }
+                    &:nth-of-type(4) {
+                        top: -100%;
+                    }
+                    &:nth-of-type(5) {
+                        top: -155%;
+                    }
+    
+                }
+            }  
+        }
+        
+    }  
+}
+
+@media only screen and (max-width: 950px) and (max-height: 450px){
+    .mainSlider {
+        width: 100vw;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        .body{
+            padding: 2vw;
+            height: 175vh;
+            width: 300vw;
+            .slider{ 
+    
+                .column {
+                    width: 60vw;
+                    .imageContainer{ 
+                        width: 59vw;
+                        height: calc(59vw * 0.625);
+                        border-radius: 10px;
+                        img{
+                            object-fit: cover;
+                        }
+                        
+                    }
+    
+                    &:nth-of-type(1) {
+                        top: -55%;
+                    }
+                    &:nth-of-type(2) {
+                        top: -60%;
+                    }
+                    &:nth-of-type(3) {
+                        top: -100%;
+                    }
+                    &:nth-of-type(4) {
+                        top: -100%;
+                    }
+                    &:nth-of-type(5) {
+                        top: -155%;
+                    }
+    
+                }
+            }  
+        }
+        
+    }  
+}
+
+
+
+
+
+
+

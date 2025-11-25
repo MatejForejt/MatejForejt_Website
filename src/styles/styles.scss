@@ -1,0 +1,91 @@
+//contact page
+@import '../components/ContactPage/Contact/styles.scss';
+@import '../components/ContactPage/Calendly/styles.scss';
+@import '../components/ContactPage/Footer/styles.scss';
+
+//About page
+@import '../components/AboutPage/AboutSections/styles.scss';
+@import '../components/AboutPage/Landing/styles.scss';
+@import '../components/AboutPage/Service/styles.scss';
+//Materials page
+@import '../components/MaterialsPage/Landing/styles.scss';
+//Landing page
+@import '../components/LandingPage/Description/styles.scss';
+@import '../components/LandingPage/Landing/styles.scss';
+@import '../components/LandingPage/MainOffer/Timer/styles.scss';
+@import '../components/LandingPage/MainOffer/styles.scss';
+@import '../components/LandingPage/Slider/styles.scss';
+@import '../components/LandingPage/OfferSections/styles.scss';
+@import '../components/LandingPage/NewestWork/Projects/styles.scss';
+@import '../components/LandingPage/NewestWork/Scene/styles.scss';
+@import '../components/LandingPage/NewestWork/styles.scss';
+@import '../components/LandingPage/Summary/style.scss';
+@import '../components/LandingPage/Summary/Points/style.scss';
+
+//Project page
+@import '../components/ProjectsPage/Projects/IconList/styles.scss';
+@import '../components/ProjectsPage/Projects/Projects/styles.scss';
+@import '../components/ProjectsPage/Projects/Scene/styles.scss';
+@import '../components/ProjectsPage/Projects/styles.scss';
+
+//Individual Project page
+@import '../components/ProjectsTemplate/TopBar/styles.scss';
+@import '../components/ProjectsTemplate/NextProjects/Projects/styles.scss';
+@import '../components/ProjectsTemplate/NextProjects/styles.scss';
+@import '../components/ProjectsTemplate/Sections/Introduction/styles.scss';
+@import '../components/ProjectsTemplate/Sections/MobileView/Projects/styles.scss';
+@import '../components/ProjectsTemplate/Sections/MobileView/styles.scss';
+@import '../components/ProjectsTemplate/Sections/Services/styles.scss';
+@import '../components/ProjectsTemplate/Sections/StyleChoice/styles.scss';
+@import '../components/ProjectsTemplate/Sections/styles.scss';
+
+//preloader 
+@import '../components/Preloader/styles.scss';
+//transition
+@import '../components/transition/CurveTransition/styles.scss';
+//common
+@import '../components//common/Intro/styles.scss';
+@import '../components/common/Description/styles.scss';
+@import '../components/common/FreeStuff/styles.scss';
+@import '../components/common/FreeStuff/Projects/styles.scss';
+@import '../components/common/IntroText/styles.scss';
+@import '../components/common/ParallaxZoom/styles.scss';
+//footer
+@import '../components/common/Footer/styles.scss';
+//buttons 
+@import '../components/common/ClickButton/styles.scss';
+@import '../components/common/LinkButton/styles.scss';
+@import '../components/common/PhoneButton/styles.scss';
+//navbar
+@import '../components/common/Navbar/styles.scss';
+//header
+@import '../components/common/Header/styles.scss';
+@import '../components/common/Header/nav/Body/styles.scss';
+@import '../components/common/Header/nav/Curve/styles.scss';
+@import '../components/common/Header/nav/Footer/styles.scss';
+@import '../components/common/Header/nav/Image/styles.scss';
+
+//CookiesConsent
+@import '../components/Cookies/Banner/styles.scss';
+@import '../components/Cookies/ManageModem/styles.scss';
+
+//info pages
+@import '../components/InfoPages/styles.scss';
+
+//404 page
+@import '../components/404/styles.scss';
+
+
+
+
+// rewrite all responsive styles correctly 
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    font-family: "Inter" , sans-serif;
+    position: relative;
+}

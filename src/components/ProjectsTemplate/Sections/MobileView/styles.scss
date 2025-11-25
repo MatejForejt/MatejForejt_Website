@@ -1,0 +1,192 @@
+.mainMobileView {
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+    padding: 15vh 0 10vh 0;
+    position: relative;
+    background-color: #22272d;
+    z-index: 5;
+
+    .svgContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        margin: 0;
+        top: 50px;
+        z-index: 4;
+        .svgDiv {
+            box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.75);
+            position: absolute;
+            border-radius: 0% 0% 50% 50%;
+            background-color: #22272d;
+            z-index: 2;
+        }
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        width: 50%;
+        text-align: center;
+        h1{
+            font-size: 4rem;
+            font-weight: 700;
+            color: #000;
+            margin: 0;
+        }
+        p{
+            font-size: 2rem;
+            font-weight: 300;
+            color: #000;
+            margin: 0;
+            line-height: 1.5em;
+        }
+    }
+
+    .projects{
+        z-index: 5;
+        background-color: #22272d;
+    }
+
+}
+
+// Assume devices that can hover and have a fine pointer (e.g., mouse) are not touch devices
+@media (hover: hover) and (pointer: fine) {
+    .mainMobileView{
+        .svgContainer{
+            .svgDiv{
+                width: 130%;
+                left: -15%;
+            }
+        }
+    }
+}
+
+// For touch devices (which typically can't hover and have coarse pointers), allow vertical scrolling
+@media (hover: none) and (pointer: coarse) {
+    .mainMobileView{
+        .svgContainer{
+            .svgDiv{
+                width: 100%;
+                left: 0%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1750px){
+    .mainMobileView {
+        height: 75vh;
+        padding: 15vh 0 10vh 0;
+    
+        .text{
+            h1{
+                font-size: 4rem;
+                font-weight: 700;
+            }
+            p{
+                font-size: 2rem;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1550px){
+    .mainMobileView {
+        height: 75vh;
+        padding: 15vh 0 10vh 0;
+    
+        .text{
+            h1{
+                font-size: 4rem;
+                font-weight: 700;
+            }
+            p{
+                font-size: 2rem;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1450px){
+    .mainMobileView {
+        height: 75vh;
+        padding: 15vh 0 10vh 0;
+    
+        .text{
+            h1{
+                font-size: 4rem;
+                font-weight: 700;
+            }
+            p{
+                font-size: 2rem;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    .mainMobileView {
+        height: 100vh;
+        padding: 5vh 0 10vh 0;
+    
+        .text{
+            h1{
+                font-size: 4rem;
+                font-weight: 700;
+            }
+            p{
+                font-size: 2rem;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .mainMobileView {
+        height: 300vh;
+        padding: 5vh 0 10vh 0;
+    
+        .text{
+            h1{
+                font-size: 4rem;
+                font-weight: 700;
+            }
+            p{
+                font-size: 2rem;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 950px) and (max-height: 500px){
+    .mainMobileView {
+        height: 200vh;
+        padding: 5vh 0 10vh 0;
+    
+        .text{
+            h1{
+                font-size: 4rem;
+                font-weight: 700;
+            }
+            p{
+                font-size: 2rem;
+                font-weight: 300;
+            }
+        }
+    }
+}
