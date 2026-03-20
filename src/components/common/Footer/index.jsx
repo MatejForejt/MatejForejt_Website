@@ -25,6 +25,8 @@ export default function Footer() {
   let reqId = null;
   const section = useRef(null);
 
+
+  const currentYear = new Date().getFullYear()
   const { isHomeCountry } = useLoad();
 
   const { scrollYProgress } = useScroll({
@@ -130,12 +132,12 @@ export default function Footer() {
           { isHomeCountry ? ( 
             <p>
               Verze:<br />
-              <span>2024 © Edice</span>
+              <span>{currentYear} © Edice</span>
             </p>
           ) : (
             <p>
               Version:<br />
-              <span>2024 © Edition</span>
+              <span>{currentYear} © Edition</span>
             </p>
           )}
           <p>

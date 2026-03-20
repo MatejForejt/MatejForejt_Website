@@ -35,11 +35,11 @@ const assets = [
         path: "/assets/a-footage/beginner-components-2.webm",
         alt: "website_6"
     },
-    {
-        src: "/assets/images/projects/denisclone.webp",
-        path:  "/assets/a-footage/denis-clone.webm",
-        alt: "website_7"
-    },
+    // {
+    //     src: "/assets/images/projects/denisclone.webp",
+    //     path:  "/assets/a-footage/denis-clone.webm",
+    //     alt: "website_7"
+    // },
     {
         src: "/assets/images/projects/apple-site.webp",
         path: "/assets/a-footage/applesite.webm",
@@ -93,11 +93,11 @@ export default function Index (){
         offset: ['start end', 'end start' ] // when the anim will play (start on the container and end of the window (top, bottom) and then when i want to stop (bottom of the container, start of the window))
     })
 
-    const y1 = useTransform(scrollYProgress, [ 0, 1], [ 0, height * 1.5])
-    const y2 = useTransform(scrollYProgress, [ 0, 1], [ 0, height * 5.5])
-    const y3 = useTransform(scrollYProgress, [ 0, 1], [ 0, height * 10])
-    const y4 = useTransform(scrollYProgress, [ 0, 1], [ 0, height * 7])
-    const y5 = useTransform(scrollYProgress, [ 0, 1], [ 0, height * 20])
+    const y1 = useTransform(scrollYProgress, [ 0, 1], [ 0, height * 0.5])
+    const y2 = useTransform(scrollYProgress, [ 0, 1], [ 0, height * 1.5])
+    const y3 = useTransform(scrollYProgress, [ 0, 1], [ 0, height * 3])
+    const y4 = useTransform(scrollYProgress, [ 0, 1], [ 0, height * 1.5])
+    const y5 = useTransform(scrollYProgress, [ 0, 1], [ 0, height * 10])
 
     useEffect( () => {
         const lenis = new Lenis()

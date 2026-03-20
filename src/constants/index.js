@@ -252,15 +252,15 @@ export const projects = [
         index: 3,
         alt: 'project4'
     },
-    {
-        title: "Portfolio DS",
-        date: "2024",
-        src: "/assets/images/projects/denisclone.webp",
-        href: '/projects/denis-clone',
-        type: 'web',
-        index: 4,
-        alt: 'project5'
-    },
+    // {
+    //     title: "Portfolio DS",
+    //     date: "2024",
+    //     src: "/assets/images/projects/denisclone.webp",
+    //     href: '/projects/denis-clone',
+    //     type: 'web',
+    //     index: 4,
+    //     alt: 'project5'
+    // },
     {
         title: "3D Portfolio",
         date: "2024",
@@ -438,15 +438,15 @@ export const projectsEN = [
         index: 3,
         alt: 'project4'
     },
-    {
-        title: "Portfolio DS",
-        date: "2024",
-        src: "/assets/images/projects/denisclone.webp",
-        href: '/projects/denis-clone',
-        type: 'web',
-        index: 4,
-        alt: 'project5'
-    },
+    // {
+    //     title: "Portfolio DS",
+    //     date: "2024",
+    //     src: "/assets/images/projects/denisclone.webp",
+    //     href: '/projects/denis-clone',
+    //     type: 'web',
+    //     index: 4,
+    //     alt: 'project5'
+    // },
     {
         title: "3D Portfolio",
         date: "2024",

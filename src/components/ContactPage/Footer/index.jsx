@@ -12,6 +12,8 @@ export default function Footer () {
     const [ delay, setDelay ] = useState(false);
     const { isHomeCountry } = useLoad();
 
+    const currentYear = new Date().getFullYear()
+
     useEffect(() => {
         setTimeout(() => {
             setDelay(true);
@@ -25,12 +27,12 @@ export default function Footer () {
                     { isHomeCountry ? (
                         <p>
                             Verze:<br />
-                            <span>2024 © Edice</span>
+                            <span>{currentYear} © Edice</span>
                         </p>
                     ) : (
                         <p>
                             Version:<br />
-                            <span>2024 © Edition</span>
+                            <span>{currentYear} © Edition</span>
                         </p>
                     )}
                     <p>

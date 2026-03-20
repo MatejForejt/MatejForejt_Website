@@ -105,7 +105,7 @@ export default function Home() {
           <Description />
           <Slider />
           <NewestWork />
-          <IntroText phrases={phrases}/>
+          {/* <IntroText phrases={phrases}/>
           <ZoomParallax 
             src1='/assets/images/projects/components.webp' 
             src2='/images/done/authentic.webp' 
@@ -119,7 +119,7 @@ export default function Home() {
           />
           <OfferSection />
           <Summary />
-          <MainOffer />
+          <MainOffer /> */}
           {/* <FreeOffers text='1'/> */}
           <Footer />
         </div>}

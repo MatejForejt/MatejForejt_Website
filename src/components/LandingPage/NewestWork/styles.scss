@@ -5,7 +5,8 @@
     flex-direction: column;
     position: relative;
     padding-top: 20rem;
-    z-index: 1;
+    z-index: 100;
+    background-color: white;
     .title{
         display: flex;
         padding: 0 11rem;

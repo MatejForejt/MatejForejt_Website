@@ -6,6 +6,8 @@ import TimeComponent from '@/components/common/TimeComponent';
 
 export default function Footer() {
     const { isHomeCountry } = useLoad()
+
+    const currentYear = new Date().getFullYear()
     return (
         <section className="footerHeader">
             <div className="info">
@@ -18,7 +20,7 @@ export default function Footer() {
                             exit="exit"
                         >
                             <span>Verze:</span>
-                            <p> 2024 © Edice</p>
+                            <p> {currentYear} © Edice</p>
                         </motion.li>
                     ) : (
                         <motion.li 
@@ -28,7 +30,7 @@ export default function Footer() {
                             exit="exit"
                         >
                             <span>Version:</span>
-                            <p> 24 © Edition</p>
+                            <p> {currentYear} © Edition</p>
                         </motion.li>
                     )}
                 </ul>

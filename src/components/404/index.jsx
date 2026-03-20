@@ -17,6 +17,8 @@ export default function NotFoundPage() {
   const path = useRef(null);
   const { isHomeCountry } = useLoad();
 
+  const currentYear = new Date().getFullYear()
+
   let progress = 0;
   let x = 0.5;
   let time = Math.PI / 2;
@@ -118,12 +120,12 @@ export default function NotFoundPage() {
           { isHomeCountry ? ( 
             <p>
               Verze:<br />
-              <span>2024 © Edice</span>
+              <span>{currentYear} © Edice</span>
             </p>
           ) : (
             <p>
               Version:<br />
-              <span>2024 © Edition</span>
+              <span>{currentYear} © Edition</span>
             </p>
           )}
           <p>
